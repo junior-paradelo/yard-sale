@@ -25,24 +25,95 @@
         font-family: "Quicksand", sans-serif;
         margin: 0;
       }
+      .my-order {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+      .title {
+        font-size: var(--lg);
+        margin-bottom: 42px;
+      }
+      .my-order-container {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        width: 300px;
+      }
+      .my-order-content {
+        display: flex;
+        flex-direction: column;
+      }
+      .order {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 16px;
+        align-items: center;
+        background-color: var(--color-background);
+        margin-bottom: 24px;
+        border-radius: 8px;
+        padding: 0 24px;
+      }
+      .order p:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+      }
+      .order p:nth-child(2) {
+        text-align: end;
+        font-weight: bold;
+      }
+      .order p span:nth-child(1) {
+        font-size: var(--md);
+        font-weight: bold;
+      }
+      .order p span:nth-child(2) {
+        font-size: var(--sm);
+        color: var(--color-primary);
+      }
+      .shopping-cart {
+        display: grid;
+        grid-template-columns: auto 1fr auto auto;
+        gap: 16px;
+        margin-bottom: 24px;
+        align-items: center;
+      }
+      .shopping-cart figure {
+        margin: 0;
+      }
+      .shopping-cart figure img {
+        width: 64px;
+        height: 64px;
+        border-radius: 24px;
+        object-fit: cover;
+      }
+      .shopping-cart p:nth-child(2) {
+        color: var(--color-primary);
+      }
+      .shopping-cart p:nth-child(3) {
+        font-size: var(--md);
+        font-weight: bold;
+      }
     </style>
   </head>
   <body>
     <div class="my-order">
       <div class="my-order-container">
+        <h1 class="title">My order</h1>
         <div class="my-order-content">
-          <p>
-            <span>01.10.24</span>
-            <span>6 articles</span>
-          </p>
-          <p>$240.00</p>
+          <div class="order">
+            <p>
+              <span>01.10.24</span>
+              <span>6 articles</span>
+            </p>
+            <p>$240.00</p>
+          </div>
         </div>
       </div>
 
       <div class="shopping-cart">
         <figure>
           <img
-            src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=600"
+            src="https://images.pexels.com/photos/249324/pexels-photo-249324.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt="phone in cart"
           />
         </figure>
@@ -53,7 +124,7 @@
       <div class="shopping-cart">
         <figure>
           <img
-            src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=600"
+            src="https://images.pexels.com/photos/249324/pexels-photo-249324.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt="phone in cart"
           />
         </figure>
@@ -64,7 +135,7 @@
       <div class="shopping-cart">
         <figure>
           <img
-            src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=600"
+            src="https://images.pexels.com/photos/249324/pexels-photo-249324.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt="phone in cart"
           />
         </figure>
@@ -75,7 +146,7 @@
       <div class="shopping-cart">
         <figure>
           <img
-            src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=600"
+            src="https://images.pexels.com/photos/249324/pexels-photo-249324.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt="phone in cart"
           />
         </figure>
@@ -86,7 +157,7 @@
       <div class="shopping-cart">
         <figure>
           <img
-            src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=600"
+            src="https://images.pexels.com/photos/249324/pexels-photo-249324.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt="phone in cart"
           />
         </figure>
